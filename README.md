@@ -1,4 +1,3 @@
-# GC-RUNIM
 # GC-RUNIM: Genetic-Cauchy and Runge-Kutta-driven Adaptive Intensive Mutation
 
 This repository contains the official Python implementation of the **GC-RUNIM** algorithm, as proposed in the manuscript: 
