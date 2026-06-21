@@ -26,4 +26,3 @@ The structural stability of the GC-RUNIM framework relies on precise hyperparame
 The framework relies on standard scientific computing and optimization libraries:
 ```bash
 pip install numpy scipy scikit-image matplotlib seaborn pandas mealpy
-pip install mealpy
