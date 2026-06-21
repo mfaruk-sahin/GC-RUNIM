@@ -8,7 +8,7 @@ GC-RUNIM is an advanced hybrid metaheuristic framework engineered to simultaneou
 
 ## 2. Reproducibility: Satellite Imagery Preprocessing
 To ensure strict experimental reproducibility, the Sentinel-2 multispectral dataset is processed through a deterministic pipeline before evaluation. The `Sentinel2DataLoader` class performs the following automated steps:
-* **Band Extraction:** Extraction of 7 critical spectral bands (B2, B3, B4, B5, B8, B8A, B11, B12) from the raw dataset.
+* **Band Extraction:** Extraction of 8 critical spectral bands (B2, B3, B4, B5, B8, B8A, B11, B12) from the raw dataset.
 * **Radiometric Normalization:** Min-max scaling is applied to project the raw reflectance values into a normalized floating-point tensor space of [0, 1]. This is a mathematical prerequisite to guarantee gradient stability during the multiplicative joint fitness evaluation.
 * **Spatial Alignment (Resolution Matching):** The 20m spatial resolution bands (B5, B11, B12) are upscaled to 10m to match the reference visible/NIR bands (B2, B3, B4, B8) using bilinear interpolation with anti-aliasing enabled.
 * **Band Stacking:** The aligned bands are stacked into a 3D multi-channel hyperspatial matrix (H, W, C).
